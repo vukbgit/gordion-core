@@ -1,0 +1,19 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "core functionalities for Gordion",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vukbgit/gordion-core.git"
+  },
+  "author": "vuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vukbgit/gordion-core/issues"
+  },
+  "homepage": "https://github.com/vukbgit/gordion-core#readme"
+}
