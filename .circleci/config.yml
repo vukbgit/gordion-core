@@ -8,7 +8,9 @@ orbs:
 # Invoke jobs via workflows
 jobs:
   release:
-    executor: node/16.1.0
+    executor:
+      name: node/default
+      tag: 16.1.0
     steps:
       - checkout
       - node/install-packages # Install and automatically cache packages
