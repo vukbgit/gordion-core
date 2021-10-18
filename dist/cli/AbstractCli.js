@@ -5,19 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.AbstractCli = void 0;
 
-var _log = require("../log");
-
-const logger = new _log.Log();
 /**
- * Shell Commander class
- * @beta
+* Abstract Cli class to be used to create adapter
+ * @class
+ * @abstract
+ */
+class AbstractCli {}
+/**
+ * Success interface 
  */
 
-class AbstractCli {
-  execAsync(command) {
-    logger.warn('async exec!');
-  }
-
-}
 
 exports.AbstractCli = AbstractCli;

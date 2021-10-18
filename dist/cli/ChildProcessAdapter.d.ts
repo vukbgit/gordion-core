@@ -1,9 +1,11 @@
+import * as childPromise from 'child-process-promise';
+import { AbstractCli, ExecSuccess, ExecError } from './AbstractCli';
 /**
-* Abstract Cli class to be used to create adapter
+ * Cli class
  * @class
  * @abstract
  */
-export declare abstract class AbstractCli {
+export declare class ChildProcessAdapter extends AbstractCli {
     /**
      * Execs a shell command asynchronously
      * @method
@@ -12,19 +14,12 @@ export declare abstract class AbstractCli {
      * @param {boolean} silent - boolean to output info
      * @return {Promise<ExecSuccess | ExecError>} a promise with either an ExecSuccess or ExecError object
      */
-    abstract execAsync(command: string, silent: boolean): Promise<ExecSuccess | ExecError>;
+    execAsync(command: string, silent?: boolean): Promise<ChildProcessExecSuccess | ExecError>;
 }
 /**
  * Success interface
  */
-export interface ExecSuccess {
+interface ChildProcessExecSuccess extends ExecSuccess, childPromise.PromiseResult<string> {
     success: boolean;
 }
-/**
- * Error interface
- */
-export interface ExecError {
-    success: boolean;
-    stdout: string;
-    stderr: string;
-}
+export {};

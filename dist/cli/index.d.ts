@@ -1,5 +1,5 @@
 /**
- * The cli module execs shell commands and helps buildin CLI
+ * The cli module execs shell commands and helps building CLI
  * @module cli
  */
-export { AbstractCli as Cli } from './AbstractCli';
+export { ChildProcessAdapter as Cli } from './ChildProcessAdapter';

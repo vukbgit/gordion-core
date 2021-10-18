@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.logLevels = exports.AbstractLog = void 0;
 
 /**
- * Abstract class to be used to create adapter
+ * Abstract Log class to be used to create adapter
  * @class
  * @abstract
  */

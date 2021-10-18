@@ -1,5 +1,5 @@
 /**
- * Abstract class to be used to create adapter
+ * Abstract Log class to be used to create adapter
  * @class
  * @abstract
  */

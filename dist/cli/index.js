@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "Cli", {
   enumerable: true,
   get: function () {
-    return _AbstractCli.AbstractCli;
+    return _ChildProcessAdapter.ChildProcessAdapter;
   }
 });
 
-var _AbstractCli = require("./AbstractCli");
+var _ChildProcessAdapter = require("./ChildProcessAdapter");
