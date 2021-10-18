@@ -18,7 +18,6 @@ const logger = new _index.Log(); //logger.warn('warn?')
   (0, _globals.test)(`log level input must be one of mapped logLevels ${_AbstractLog.logLevels.join(', ')}`, () => {
     //loop legitimate levels
     _AbstractLog.logLevels.forEach(level => {
-      //expect(logger.setMinimumLogLevel(level)).not.toThrow();
       (0, _globals.expect)(_AbstractLog.logLevels).toContain(logger.setMinimumLogLevel(level));
     }); //try with a pseudo-random string
 

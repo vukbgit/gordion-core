@@ -16,7 +16,6 @@ describe('Logger module', () => {
   test(`log level input must be one of mapped logLevels ${logLevels.join(', ')}`, () => {
     //loop legitimate levels
     logLevels.forEach(level => {
-      //expect(logger.setMinimumLogLevel(level)).not.toThrow();
       expect(logLevels).toContain(logger.setMinimumLogLevel(level));
     });
     //try with a pseudo-random string
