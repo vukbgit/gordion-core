@@ -1,16 +1,19 @@
-import { describe, expect, test } from '@jest/globals';
-import { AbstractLog, logLevels } from './AbstractLog'
-import { Log } from './index'
+"use strict";
+
+var _globals = require("@jest/globals");
+
+var _AbstractCli = require("./AbstractCli");
+
+var _index = require("./index");
 
 //instance
-const logger = new Log
-
-describe('Log module', () => {
+const cli = new _index.Cli();
+(0, _globals.describe)('Cli module', () => {
   //check instance
-  test('concrete class exported from module must be instance of abstract class', () => {
-    expect(logger).toBeInstanceOf(AbstractLog);
-  })
-  //check level
+  (0, _globals.test)('concrete class exported from module must be instance of abstract class', () => {
+    (0, _globals.expect)(cli).toBeInstanceOf(_AbstractCli.AbstractCli);
+  });
+  /*//check level
   test(`log level input must be one of mapped logLevels ${logLevels.join(', ')}`, () => {
     //loop legitimate levels
     logLevels.forEach(level => {
@@ -19,7 +22,7 @@ describe('Log module', () => {
     //try with a pseudo-random string
     const wrongLevel = (Math.random() + 1).toString(36).substring(7);
     expect(() => {logger.setMinimumLogLevel(wrongLevel)}).toThrow();
-  })
+  })*/
   //check output according to minimum level
   //no way to test console output
-})
+});

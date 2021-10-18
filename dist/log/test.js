@@ -7,9 +7,8 @@ var _AbstractLog = require("./AbstractLog");
 var _index = require("./index");
 
 //instance
-const logger = new _index.Log(); //logger.warn('warn?')
-
-(0, _globals.describe)('Logger module', () => {
+const logger = new _index.Log();
+(0, _globals.describe)('Log module', () => {
   //check instance
   (0, _globals.test)('concrete class exported from module must be instance of abstract class', () => {
     (0, _globals.expect)(logger).toBeInstanceOf(_AbstractLog.AbstractLog);
