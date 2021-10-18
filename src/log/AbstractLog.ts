@@ -3,7 +3,7 @@
  * @class
  * @abstract
  */
-export abstract class AbstractLogger {
+export abstract class AbstractLog {
 
   /**
    * Gets current log level

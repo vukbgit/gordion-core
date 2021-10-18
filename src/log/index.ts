@@ -1,8 +1,8 @@
 /**
  * The logger module sets a log level and outputs accordingly formatted messages to console
- * @module logger
+ * @module log
  */
 
-export { LoglevelAdapter as Logger } from './LoglevelAdapter';
+export { LoglevelAdapter as Log } from './LoglevelAdapter';
 
 

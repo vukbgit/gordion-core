@@ -1,9 +1,8 @@
-import { AbstractLogger, LogLevel } from './AbstractLogger';
+import { AbstractLog, LogLevel } from './AbstractLog';
 /**
- * Logger class
- * @beta
+ * Log class
  */
-export declare class LoglevelAdapter extends AbstractLogger {
+export declare class LoglevelAdapter extends AbstractLog {
     /**
      * maps of loglevel levels to logLevel enum elements
      */

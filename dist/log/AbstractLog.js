@@ -3,21 +3,21 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.logLevels = exports.AbstractLogger = void 0;
+exports.logLevels = exports.AbstractLog = void 0;
 
 /**
  * Abstract class to be used to create adapter
  * @class
  * @abstract
  */
-class AbstractLogger {}
+class AbstractLog {}
 /**
  * Possible log levels values
  * @type {string[]}
  */
 
 
-exports.AbstractLogger = AbstractLogger;
+exports.AbstractLog = AbstractLog;
 const logLevels = ['trace', 'debug', 'info', 'warn', 'error', 'silent'];
 /**
  * Possible log levels type

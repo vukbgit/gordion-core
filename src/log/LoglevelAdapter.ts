@@ -1,13 +1,12 @@
 import util from 'util';
 import log from 'loglevel';
 import chalk from 'chalk';
-import { AbstractLogger, LogLevel } from './AbstractLogger';
+import { AbstractLog, LogLevel } from './AbstractLog';
 
 /**
- * Logger class
- * @beta
+ * Log class
  */
-export class LoglevelAdapter extends AbstractLogger {
+export class LoglevelAdapter extends AbstractLog {
 
   /**
    * maps of loglevel levels to logLevel enum elements

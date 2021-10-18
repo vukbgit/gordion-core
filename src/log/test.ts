@@ -1,16 +1,16 @@
 import { describe, expect, test } from '@jest/globals';
-import { AbstractLogger, logLevels } from './AbstractLogger'
-import { Logger } from './index'
+import { AbstractLog, logLevels } from './AbstractLog'
+import { Log } from './index'
 
 //instance
-const logger = new Logger
+const logger = new Log
 
 //logger.warn('warn?')
 
 describe('Logger module', () => {
   //check instance
   test('concrete class exported from module must be instance of abstract class', () => {
-    expect(logger).toBeInstanceOf(AbstractLogger);
+    expect(logger).toBeInstanceOf(AbstractLog);
   })
   //check level
   test(`log level input must be one of mapped logLevels ${logLevels.join(', ')}`, () => {

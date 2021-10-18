@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "Logger", {
+Object.defineProperty(exports, "Log", {
   enumerable: true,
   get: function () {
     return _LoglevelAdapter.LoglevelAdapter;

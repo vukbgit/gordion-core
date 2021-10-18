@@ -11,15 +11,14 @@ var _loglevel = _interopRequireDefault(require("loglevel"));
 
 var _chalk = _interopRequireDefault(require("chalk"));
 
-var _AbstractLogger = require("./AbstractLogger");
+var _AbstractLog = require("./AbstractLog");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
- * Logger class
- * @beta
+ * Log class
  */
-class LoglevelAdapter extends _AbstractLogger.AbstractLogger {
+class LoglevelAdapter extends _AbstractLog.AbstractLog {
   /**
    * maps of loglevel levels to logLevel enum elements
    */
