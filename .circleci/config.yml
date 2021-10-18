@@ -8,7 +8,7 @@ orbs:
 # Invoke jobs via workflows
 jobs:
   release:
-    executor: node/default
+    executor: node/16.1.0
     steps:
       - checkout
       - node/install-packages # Install and automatically cache packages
@@ -28,7 +28,3 @@ workflows:
       - release:
           requires:
             - node/test
-          matrix:
-            parameters:
-              version:
-                - 16.1.0
