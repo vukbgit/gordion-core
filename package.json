@@ -12,11 +12,32 @@
     "url": "https://github.com/vukbgit/gordion-core/issues"
   },
   "homepage": "https://github.com/vukbgit/gordion-core#readme",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "test"
+  "exports": {
+    "./abstract-class": "./dist/abstract-class.js",
+    "./logger": "./dist/logger/index.js"
   },
   "engines": {
     "node": ">=16.10.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "loglevel": "^1.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.13.0",
+    "@tsconfig/node16": "^1.0.1",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^15.0.1",
+    "jest": "^27.2.4",
+    "semantic-release": "^18.0.0",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "build": "tsc && babel src --out-dir dist --extensions .ts",
+    "test": "jest --config jest.config.json",
+    "build+test": "npm run build && npm run test"
   }
 }
