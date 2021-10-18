@@ -1,5 +1,5 @@
 {
-  "name": "core",
+  "name": "@gordion/core",
   "version": "1.0.0",
   "description": "core functionalities for Gordion",
   "author": "vuk",
