@@ -28,3 +28,7 @@ workflows:
       - release:
           requires:
             - node/test
+          matrix:
+            parameters:
+              version:
+                - 16.1.0
