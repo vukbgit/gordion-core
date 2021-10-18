@@ -11,3 +11,4 @@ Provides core functionalities for Gordion
 * javascript abstract classes: [@status/abstract](https://www.npmjs.com/package/@status/abstract)
 * ES6 to ES5 transpiling: [Babel](https://github.com/babel)
 * testing: [Jest](https://jestjs.io)
+* release automation: [semantic-release](https://github.com/semantic-release/semantic-release)
