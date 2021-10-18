@@ -4,6 +4,7 @@
   "description": "core functionalities for Gordion",
   "author": "vuk",
   "license": "ISC",
+  "access": "public",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vukbgit/gordion-core.git"
