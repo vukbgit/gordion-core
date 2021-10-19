@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/vukbgit/gordion-core/compare/v1.3.3...v1.3.4) (2021-10-19)
+
+
+### Fix
+
+* npm publishing ([a5e61d8](https://github.com/vukbgit/gordion-core/commit/a5e61d806b7a875af4608140a9813a87657fcb8f))
+
 ## [1.3.3](https://github.com/vukbgit/gordion-core/compare/v1.3.2...v1.3.3) (2021-10-19)
 
 
