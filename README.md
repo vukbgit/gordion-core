@@ -3,7 +3,8 @@
 Provides core functionalities for Gordion
 
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![vukbgit](https://circleci.com/gh/vukbgit/gordion-core.svg?style=svg)]https://app.circleci.com/pipelines/github/vukbgit)
+[![vukbgit](https://circleci.com/gh/vukbgit/gordion-core.svg?style=svg)](https://app.circleci.com/pipelines/github/vukbgit)
+
 
 ## Technology Stack ##
 
