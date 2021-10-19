@@ -14,8 +14,8 @@
   },
   "homepage": "https://github.com/vukbgit/gordion-core#readme",
   "exports": {
-    "./abstract-class": "./dist/abstract-class.js",
-    "./logger": "./dist/logger/index.js"
+    "./log": "./dist/log/index.js",
+    "./cli": "./dist/cli/index.js"
   },
   "engines": {
     "node": ">=16.10.0"
