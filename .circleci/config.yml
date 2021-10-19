@@ -21,6 +21,8 @@ jobs:
       name: node/default
       tag: 16.1.0
     steps:
+      - checkout
+      - node/install-packages # Install and automatically cache packages
       - run: npx semantic-release
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
